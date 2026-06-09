@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions Générales de Vente — [choix en cours]</title>
+  <meta name="description" content="Conditions générales de vente de l'agence [choix en cours] — modalités de commande, tarification, livraison, paiement et garanties." />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+    <span class="theme-toggle__icon theme-toggle__icon--moon"><i class="fas fa-moon"></i></span>
+    <span class="theme-toggle__icon theme-toggle__icon--sun"><i class="fas fa-sun"></i></span>
+  </button>
+
+  <header id="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__mark"><span class="logo__slash">/</span></div>
+        <span class="logo__name">[choix en <em>cours]</em></span>
+      </a>
+      <nav id="main-nav" aria-label="Navigation principale">
+        <a href="index.html#accueil"  class="nav__link">Accueil</a>
+        <a href="index.html#services" class="nav__link">Services</a>
+        <a href="index.html#approche" class="nav__link">Approche</a>
+        <a href="index.html#contact"  class="nav__link">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a href="index.html#contact" class="btn btn--primary">
+          <i class="fas fa-paper-plane"></i>
+          <span>Demander un devis</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO COMPACT -->
+    <div class="ml-hero">
+      <div class="ml-hero__bg" aria-hidden="true">
+        <div class="ml-hero__orb ml-hero__orb--1"></div>
+        <div class="ml-hero__orb ml-hero__orb--2"></div>
+        <div class="ml-hero__grid"></div>
+      </div>
+      <div class="container ml-hero__inner">
+        <div class="ml-hero__breadcrumb">
+          <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Conditions Générales de Vente</span>
+        </div>
+        <div class="ml-hero__tag">
+          <i class="fas fa-file-contract"></i>
+          Cadre contractuel
+        </div>
+        <h1 class="ml-hero__title">
+          Conditions <em>générales</em> de vente
+        </h1>
+        <div class="ml-hero__meta">
+          <span><i class="fas fa-calendar-alt"></i> En vigueur depuis le 1er janvier 2026</span>
+          <span><i class="fas fa-building"></i> [choix en cours]</span>
+          <span><i class="fas fa-map-marker-alt"></i> Wittelsheim, France</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYOUT -->
+    <div class="ml-layout">
+      <div class="container ml-layout__inner">
+
+        <!-- Sommaire latéral -->
+        <aside class="ml-sidebar">
+          <nav class="ml-nav" aria-label="Sommaire des CGV">
+            <p class="ml-nav__title"><i class="fas fa-list" style="margin-right:6px;color:var(--brand-terra)"></i></p>
+            <ol class="ml-nav__list">
+              <li class="ml-nav__item"><a href="#objet"><i class="fas fa-info-circle"></i>Objet et champ d'application<span class="ml-nav__num">01</span></a></li>
+              <li class="ml-nav__item"><a href="#definitions"><i class="fas fa-book"></i>Définitions<span class="ml-nav__num">02</span></a></li>
+              <li class="ml-nav__item"><a href="#commande"><i class="fas fa-file-signature"></i>Formation du contrat<span class="ml-nav__num">03</span></a></li>
+              <li class="ml-nav__item"><a href="#prestations"><i class="fas fa-briefcase"></i>Prestations<span class="ml-nav__num">04</span></a></li>
+              <li class="ml-nav__item"><a href="#tarifs"><i class="fas fa-tag"></i>Tarifs et devis<span class="ml-nav__num">05</span></a></li>
+              <li class="ml-nav__item"><a href="#paiement"><i class="fas fa-credit-card"></i>Modalités de paiement<span class="ml-nav__num">06</span></a></li>
+              <li class="ml-nav__item"><a href="#delais"><i class="fas fa-calendar-check"></i>Délais et livraison<span class="ml-nav__num">07</span></a></li>
+              <li class="ml-nav__item"><a href="#propriete-cgv"><i class="fas fa-copyright"></i>Propriété intellectuelle<span class="ml-nav__num">08</span></a></li>
+              <li class="ml-nav__item"><a href="#confidentialite-cgv"><i class="fas fa-shield-halved"></i>Confidentialité<span class="ml-nav__num">09</span></a></li>
+              <li class="ml-nav__item"><a href="#responsabilite-cgv"><i class="fas fa-gavel"></i>Responsabilité<span class="ml-nav__num">10</span></a></li>
+              <li class="ml-nav__item"><a href="#resiliation"><i class="fas fa-times-circle"></i>Résiliation<span class="ml-nav__num">11</span></a></li>
+              <li class="ml-nav__item"><a href="#droit-cgv"><i class="fas fa-balance-scale"></i>Droit applicable<span class="ml-nav__num">12</span></a></li>
+            </ol>
+          </nav>
+        </aside>
+
+        <!-- Contenu -->
+        <div class="ml-content">
+
+          <!-- Préambule -->
+          <div class="ml-infobox" style="margin-bottom:48px;">
+            <strong>Préambule —</strong> Les présentes Conditions Générales de Vente (CGV) régissent les relations contractuelles entre <strong>[choix en cours]</strong>, entreprise individuelle immatriculée sous le SIRET 10551449100015, dont le siège social est situé 7 rue de la gare, 68310 Wittelsheim, et tout client (professionnel ou particulier) ayant recours à ses services. Toute commande implique l'acceptation pleine et entière des présentes CGV.
+          </div>
+
+          <!-- 01 – Objet -->
+          <article class="ml-section reveal" id="objet">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--sage"><i class="fas fa-info-circle"></i></div>
+              <div>
+                <span class="ml-section__num">Article 01</span>
+                <h2 class="ml-section__title">Objet et champ d'application</h2>
+              </div>
+            </div>
+            <p>Les présentes CGV ont pour objet de définir les droits et obligations de [choix en cours] et de ses clients dans le cadre de la vente de prestations de services suivantes :</p>
+            <ul class="ml-list">
+              <li>Création et développement de sites web (sites vitrines, e-commerce, landing pages)</li>
+              <li>Refonte et maintenance de sites existants</li>
+              <li>Optimisation SEO technique et rédactionnelle</li>
+              <li>Création d'identité visuelle et supports de communication</li>
+              <li>Gestion des réseaux sociaux et community management</li>
+              <li>Conception et gestion de campagnes publicitaires digitales</li>
+              <li>Conseil et stratégie en communication digitale</li>
+            </ul>
+            <p>Toute commande de prestations implique l'acceptation sans réserve des présentes CGV, qui prévalent sur tout autre document du client. [choix en cours] se réserve le droit de modifier ces CGV à tout moment ; les nouvelles versions s'appliquent aux commandes passées après leur publication.</p>
+          </article>
+
+          <!-- 02 – Définitions -->
+          <article class="ml-section reveal" id="definitions">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--teal"><i class="fas fa-book"></i></div>
+              <div>
+                <span class="ml-section__num">Article 02</span>
+                <h2 class="ml-section__title">Définitions</h2>
+              </div>
+            </div>
+            <div class="ml-table-wrapper">
+              <table class="ml-table">
+                <thead><tr><th>Terme</th><th>Définition</th></tr></thead>
+                <tbody>
+                  <tr><td>Prestataire</td><td>[choix en cours], entreprise individuelle représentée par Théo SPRINGER.</td></tr>
+                  <tr><td>Client</td><td>Toute personne physique ou morale ayant passé commande auprès du Prestataire.</td></tr>
+                  <tr><td>Prestation</td><td>Service réalisé par le Prestataire tel que décrit dans le devis signé.</td></tr>
+                  <tr><td>Devis</td><td>Document contractuel détaillant la nature, l'étendue et le prix des prestations.</td></tr>
+                  <tr><td>Bon de commande</td><td>Devis accepté et signé par le Client, valant commande ferme.</td></tr>
+                  <tr><td>Livrables</td><td>Résultats tangibles des prestations : maquettes, code source, fichiers graphiques, contenus rédigés, etc.</td></tr>
+                  <tr><td>Brief</td><td>Document fourni par le Client décrivant ses besoins, objectifs et contraintes.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <!-- 03 – Formation du contrat -->
+          <article class="ml-section reveal" id="commande">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--gold"><i class="fas fa-file-signature"></i></div>
+              <div>
+                <span class="ml-section__num">Article 03</span>
+                <h2 class="ml-section__title">Formation du contrat</h2>
+              </div>
+            </div>
+            <p>Le processus de commande se déroule comme suit :</p>
+            <ol class="ml-list">
+              <li><strong>Demande de devis :</strong> le Client soumet sa demande via le formulaire de contact ou par email.</li>
+              <li><strong>Échange préalable :</strong> un premier rendez-vous (téléphonique ou visioconférence) est organisé pour affiner le besoin.</li>
+              <li><strong>Émission du devis :</strong> [choix en cours] adresse un devis détaillé au Client dans un délai de 5 jours ouvrés.</li>
+              <li><strong>Acceptation :</strong> le Client retourne le devis signé, accompagné du versement de l'acompte prévu. Cette étape vaut formation du contrat.</li>
+              <li><strong>Démarrage :</strong> les travaux débutent dès réception du devis signé et de l'acompte.</li>
+            </ol>
+            <div class="ml-infobox--terra ml-infobox">
+              Tout devis est valable <strong>30 jours calendaires</strong> à compter de sa date d'émission. Au-delà, [choix en cours] se réserve le droit de le réviser en fonction de l'évolution de sa charge de travail ou des tarifs pratiqués.
+            </div>
+          </article>
+
+          <!-- 04 – Prestations -->
+          <article class="ml-section reveal" id="prestations">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--violet"><i class="fas fa-briefcase"></i></div>
+              <div>
+                <span class="ml-section__num">Article 04</span>
+                <h2 class="ml-section__title">Description des prestations</h2>
+              </div>
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Obligations du Prestataire</h3>
+            <ul class="ml-list">
+              <li>[choix en cours] s'engage à réaliser les prestations avec soin, diligence et professionnalisme, conformément aux spécifications du devis.</li>
+              <li>Les prestations sont réalisées selon une <strong>obligation de moyens</strong>, non de résultats, sauf mention contraire explicite dans le devis.</li>
+              <li>Le Prestataire informe le Client de tout obstacle ou difficulté susceptible d'affecter les délais ou la qualité des livrables.</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Obligations du Client</h3>
+            <ul class="ml-list">
+              <li>Fournir un brief clair et complet ainsi que tous les éléments nécessaires (textes, images, accès, identifiants) dans les délais convenus.</li>
+              <li>Désigner un interlocuteur unique habilité à prendre les décisions et à valider les livrables.</li>
+              <li>Valider chaque étape ou livrable dans un délai maximum de <strong>7 jours ouvrés</strong> après réception. Passé ce délai, le livrable est réputé accepté.</li>
+              <li>Notifier par écrit tout retour ou demande de modification dans ce même délai.</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Modifications en cours de projet</h3>
+            <p>Toute demande de modification substantielle (hors corrections mineures) par rapport aux spécifications du devis initial donnera lieu à un avenant tarifaire. Les modifications sont considérées substantielles lorsqu'elles impactent le périmètre, les délais ou les technologies prévus.</p>
+          </article>
+
+          <!-- 05 – Tarifs -->
+          <article class="ml-section reveal" id="tarifs">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--terra"><i class="fas fa-tag"></i></div>
+              <div>
+                <span class="ml-section__num">Article 05</span>
+                <h2 class="ml-section__title">Tarifs et devis</h2>
+              </div>
+            </div>
+            <p>Les tarifs de [choix en cours] sont établis sur mesure pour chaque projet, en fonction de sa complexité, de son périmètre et des technologies impliquées. Ils sont exprimés en euros HT (hors taxes). La TVA applicable est celle en vigueur au jour de la facturation.</p>
+
+            <div class="ml-infobox">
+              <strong>Franchise en base de TVA :</strong> [choix en cours] bénéficie du régime de franchise en base de TVA conformément à l'article 293 B du CGI. À ce titre, la TVA n'est pas applicable sur les factures. Mention portée sur les factures : <em>« TVA non applicable — art. 293 B du CGI »</em>.
+            </div>
+
+            <p>Les tarifs horaires pratiqués en dehors des forfaits (prestations ponctuelles, maintenance, conseil) sont communiqués sur demande. Toute heure entamée est due.</p>
+            <p>[choix en cours] se réserve le droit de réviser ses tarifs à tout moment. Les tarifs appliqués sont ceux en vigueur au jour de l'acceptation du devis par le Client.</p>
+          </article>
+
+          <!-- 06 – Paiement -->
+          <article class="ml-section reveal" id="paiement">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--sage"><i class="fas fa-credit-card"></i></div>
+              <div>
+                <span class="ml-section__num">Article 06</span>
+                <h2 class="ml-section__title">Modalités de paiement</h2>
+              </div>
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Échéancier standard</h3>
+            <div class="ml-table-wrapper">
+              <table class="ml-table">
+                <thead><tr><th>Étape</th><th>Montant</th><th>Condition</th></tr></thead>
+                <tbody>
+                  <tr><td>Acompte au démarrage</td><td>40% du montant total HT</td><td>À la signature du devis</td></tr>
+                  <tr><td>Acompte intermédiaire</td><td>30% du montant total HT</td><td>À la validation des maquettes / mi-projet</td></tr>
+                  <tr><td>Solde final</td><td>30% du montant total HT</td><td>À la livraison du projet finalisé</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Un échéancier différent peut être négocié et fixé dans le devis. L'échéancier indiqué dans le devis signé prévaut sur les dispositions ci-dessus.</p>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Moyens de paiement acceptés</h3>
+            <ul class="ml-list">
+              <li>Virement bancaire (IBAN communiqué sur la facture)</li>
+              <li>Chèque à l'ordre de Théo SPRINGER</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Retards de paiement</h3>
+            <p>Toute facture non réglée à son échéance entraîne de plein droit, sans mise en demeure préalable :</p>
+            <ul class="ml-list">
+              <li>Des pénalités de retard calculées au taux directeur de la BCE majoré de 10 points de pourcentage.</li>
+              <li>Une indemnité forfaitaire pour frais de recouvrement de <strong>40 €</strong> (art. L441-10 du Code de commerce).</li>
+              <li>La suspension immédiate de toute prestation en cours jusqu'au règlement intégral des sommes dues.</li>
+            </ul>
+
+            <div class="ml-infobox--terra ml-infobox">
+              Les livrables numériques (code source, fichiers graphiques, contenus) restent la propriété de [choix en cours] jusqu'au paiement intégral de l'ensemble des factures liées au projet.
+            </div>
+          </article>
+
+          <!-- 07 – Délais -->
+          <article class="ml-section reveal" id="delais">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--teal"><i class="fas fa-calendar-check"></i></div>
+              <div>
+                <span class="ml-section__num">Article 07</span>
+                <h2 class="ml-section__title">Délais et livraison</h2>
+              </div>
+            </div>
+            <p>Les délais de livraison sont fixés dans le devis à titre indicatif et débutent à compter de la réception de l'acompte et des éléments nécessaires au démarrage du projet (brief, contenus, accès).</p>
+
+            <ul class="ml-list">
+              <li>Les délais sont automatiquement prolongés en cas de retard du Client dans la fourniture des éléments requis ou dans la validation des étapes.</li>
+              <li>En cas de retard imputable à [choix en cours] supérieur à 30 jours ouvrés sur le délai initial, le Client pourra demander une remise négociée.</li>
+              <li>Les cas de force majeure (pannes techniques, maladie, circonstances exceptionnelles) suspendent les délais sans pénalité.</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Recette et validation</h3>
+            <p>La livraison s'effectue par transmission par email ou mise en ligne en environnement de préproduction. Le Client dispose de <strong>7 jours ouvrés</strong> pour émettre des réserves motivées par écrit. En l'absence de réserves dans ce délai, les livrables sont réputés acceptés sans réserve.</p>
+          </article>
+
+          <!-- 08 – Propriété intellectuelle -->
+          <article class="ml-section reveal" id="propriete-cgv">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--gold"><i class="fas fa-copyright"></i></div>
+              <div>
+                <span class="ml-section__num">Article 08</span>
+                <h2 class="ml-section__title">Propriété intellectuelle</h2>
+              </div>
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Cession de droits au Client</h3>
+            <p>Après paiement intégral de la prestation, [choix en cours] cède au Client les droits d'exploitation sur les livrables créés spécifiquement pour son projet, pour les usages suivants :</p>
+            <ul class="ml-list">
+              <li>Exploitation commerciale du site web ou des supports livrés</li>
+              <li>Reproduction et communication au public dans le cadre des activités du Client</li>
+              <li>Modification par le Client ou ses prestataires futurs, sous réserve de ne pas porter atteinte au droit moral de l'auteur</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Droits conservés par [choix en cours]</h3>
+            <ul class="ml-list">
+              <li>[choix en cours] conserve ses droits moraux d'auteur sur l'ensemble des créations.</li>
+              <li>[choix en cours] se réserve le droit de mentionner le projet dans ses références commerciales et de le présenter dans son portfolio, sauf opposition écrite du Client.</li>
+              <li>Les outils, méthodes, composants génériques ou bibliothèques développés par [choix en cours] en dehors du projet restent sa propriété exclusive.</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Éléments fournis par le Client</h3>
+            <p>Le Client garantit détenir tous les droits nécessaires sur les contenus (textes, images, logos, vidéos) qu'il fournit et dégage [choix en cours] de toute responsabilité en cas de violation des droits d'un tiers.</p>
+          </article>
+
+          <!-- 09 – Confidentialité -->
+          <article class="ml-section reveal" id="confidentialite-cgv">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--violet"><i class="fas fa-shield-halved"></i></div>
+              <div>
+                <span class="ml-section__num">Article 09</span>
+                <h2 class="ml-section__title">Confidentialité</h2>
+              </div>
+            </div>
+            <p>[choix en cours] s'engage à traiter avec la plus stricte confidentialité toutes les informations commerciales, techniques et stratégiques communiquées par le Client dans le cadre du projet.</p>
+            <ul class="ml-list">
+              <li>Aucune information confidentielle ne sera divulguée à des tiers sans accord écrit préalable du Client.</li>
+              <li>Cette obligation de confidentialité s'applique pendant toute la durée de la mission et pendant <strong>3 ans</strong> après son achèvement.</li>
+              <li>Elle ne s'applique pas aux informations déjà connues du public ou que [choix en cours] aurait obtenues de façon indépendante.</li>
+            </ul>
+            <p>Le Client autorise néanmoins [choix en cours] à mentionner son nom et à présenter le projet réalisé à titre de référence commerciale, sauf mention contraire dans le devis ou par accord écrit.</p>
+          </article>
+
+          <!-- 10 – Responsabilité -->
+          <article class="ml-section reveal" id="responsabilite-cgv">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--slate"><i class="fas fa-gavel"></i></div>
+              <div>
+                <span class="ml-section__num">Article 10</span>
+                <h2 class="ml-section__title">Responsabilité</h2>
+              </div>
+            </div>
+            <p>[choix en cours] ne saurait être tenu responsable des dommages indirects, pertes de chiffre d'affaires, perte de données ou atteinte à l'image que pourrait subir le Client du fait de l'utilisation des livrables ou d'un retard de livraison.</p>
+
+            <ul class="ml-list">
+              <li>La responsabilité de [choix en cours] est plafonnée au montant total des sommes effectivement perçues au titre du projet concerné.</li>
+              <li>[choix en cours] n'est pas responsable des contenus fournis par le Client ni des conséquences juridiques liées à leur utilisation.</li>
+              <li>Les performances SEO, taux de conversion ou résultats commerciaux ne peuvent être garantis ; les prestations en la matière constituent une obligation de moyens.</li>
+              <li>En cas de panne ou d'interruption du service due à l'hébergeur ou à un prestataire tiers, [choix en cours] ne saurait être tenu responsable.</li>
+            </ul>
+          </article>
+
+          <!-- 11 – Résiliation -->
+          <article class="ml-section reveal" id="resiliation">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--terra"><i class="fas fa-times-circle"></i></div>
+              <div>
+                <span class="ml-section__num">Article 11</span>
+                <h2 class="ml-section__title">Résiliation</h2>
+              </div>
+            </div>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:0 0 10px;transition:color var(--t-slow);">Résiliation à l'initiative du Client</h3>
+            <p>Le Client peut mettre fin au contrat à tout moment par notification écrite. Dans ce cas :</p>
+            <ul class="ml-list">
+              <li>Les sommes correspondant au travail réalisé jusqu'à la date de résiliation restent dues, calculées au prorata du temps passé.</li>
+              <li>L'acompte versé au démarrage est définitivement acquis à [choix en cours], sans possibilité de remboursement.</li>
+              <li>[choix en cours] livrera les travaux réalisés à la date de résiliation sous 7 jours ouvrés, sur présentation du règlement des sommes dues.</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Résiliation à l'initiative de [choix en cours]</h3>
+            <p>[choix en cours] se réserve le droit de résilier le contrat en cas de :</p>
+            <ul class="ml-list">
+              <li>Non-paiement d'une facture à son échéance après mise en demeure restée sans effet sous 15 jours.</li>
+              <li>Manquement grave du Client à ses obligations (fourniture de contenus illicites, comportement abusif, etc.).</li>
+              <li>Force majeure rendant l'exécution du contrat impossible de manière durable.</li>
+            </ul>
+            <p>Dans ces cas, les sommes déjà versées ne sont pas remboursées et les travaux réalisés restent la propriété de [choix en cours] jusqu'au règlement intégral.</p>
+          </article>
+
+          <!-- 12 – Droit applicable -->
+          <article class="ml-section reveal" id="droit-cgv">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--gold"><i class="fas fa-balance-scale"></i></div>
+              <div>
+                <span class="ml-section__num">Article 12</span>
+                <h2 class="ml-section__title">Droit applicable et litiges</h2>
+              </div>
+            </div>
+            <p>Les présentes CGV sont soumises au <strong>droit français</strong>. Tout litige relatif à leur interprétation ou à leur exécution sera soumis à la compétence des <strong>tribunaux du ressort de Paris</strong>, sauf disposition légale impérative contraire.</p>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Médiation</h3>
+            <p>Conformément aux dispositions du Code de la consommation, tout Client particulier dispose du droit de recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable du litige qui l'oppose à [choix en cours].</p>
+
+            <div class="ml-infobox">
+              Avant tout recours judiciaire, les parties s'engagent à rechercher une solution amiable pendant un délai de 30 jours à compter de la notification écrite du litige. La médiation en ligne de la Commission européenne est accessible à : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">ec.europa.eu/consumers/odr</a>.
+            </div>
+
+            <div class="ml-contact-card">
+              <div class="ml-contact-card__icon"><i class="fas fa-headset"></i></div>
+              <div class="ml-contact-card__body">
+                <h4>Besoin d'un devis ou d'une clarification ?</h4>
+                <p>
+                  Par email : <a href="mailto:[choix en cours]">[choix en cours]</a><br />
+                  Par courrier : 7 rue de la gare, 68310 Wittelsheim<br />
+                  Par téléphone : <a href="tel:+33621696279">+33 6 21 69 62 79</a>
+                </p>
+              </div>
+              <a href="index.html#contact" class="btn btn--primary">
+                <i class="fas fa-paper-plane"></i> Demander un devis
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.ml-content -->
+      </div><!-- /.ml-layout__inner -->
+    </div><!-- /.ml-layout -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__mark"><span class="logo__slash">/</span></div>
+        <span class="logo__name">[choix en <em>cours]</em></span>
+      </a>
+      <p class="footer__copy">© 2025 [choix en cours]. Tous droits réservés.</p>
+      <nav class="footer__links" aria-label="Liens légaux">
+        <a href="mention.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="cgv.html" style="color:var(--brand-sage);">CGV</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
