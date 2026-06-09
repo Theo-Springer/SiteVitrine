@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theo Agency — Web & Communication</title>
+
+  <!-- Google Fonts : Plus Jakarta Sans (corps) + Fraunces (display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Feuille de styles externe -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ================================================
+       TOGGLE DARK / LIGHT — bouton flottant
+  ================================================ -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+    <span class="theme-toggle__icon theme-toggle__icon--moon"><i class="fas fa-moon"></i></span>
+    <span class="theme-toggle__icon theme-toggle__icon--sun"><i class="fas fa-sun"></i></span>
+    <span class="theme-toggle__track"></span>
+  </button>
+
+  <!-- ================================================
+       NAVIGATION
+  ================================================ -->
+  <header id="site-header">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#accueil" class="logo">
+        <div class="logo__mark">
+          <span class="logo__slash">/</span>
+        </div>
+        <span class="logo__name">Theo<em>ra</em></span>
+      </a>
+
+      <!-- Navigation principale -->
+      <nav id="main-nav" aria-label="Navigation principale">
+        <a href="#accueil"  class="nav__link" data-close>Accueil</a>
+        <a href="#services" class="nav__link" data-close>Services</a>
+        <a href="#approche" class="nav__link" data-close>Approche</a>
+        <a href="#contact"  class="nav__link" data-close>Contact</a>
+      </nav>
+
+      <!-- Actions header -->
+      <div class="header__actions">
+        <a href="#contact" class="btn btn--primary">
+          <i class="fas fa-paper-plane"></i>
+          <span>Demander un devis</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================================================
+         HERO — Section Accueil
+    ================================================ -->
+    <section id="accueil" class="hero">
+
+      <!-- Fond décoratif -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__inner">
+
+        <!-- Colonne texte -->
+        <div class="hero__content">
+
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Agence Web &amp; Com' — Wittelsheim
+          </div>
+
+          <h1 class="hero__title">
+            Le site qui<br />
+            <em class="hero__title-em">performe</em>,<br />
+            la marque qui<br />
+            <em class="hero__title-em hero__title-em--alt">résonne</em>.
+          </h1>
+
+          <p class="hero__subtitle">
+            Un interlocuteur unique pour votre développement web <em>et</em> votre communication de marque.
+            Nous aidons PME, artisans et commerçants à bâtir une présence digitale cohérente et durable.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#services" class="btn btn--primary btn--lg">
+              <i class="fas fa-rocket"></i> Nos expertises
+            </a>
+            <a href="#contact" class="btn btn--ghost btn--lg">
+              Démarrer un projet <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Indicateurs de confiance -->
+          <div class="hero__trust">
+            <div class="trust-item">
+              <strong>+20</strong><span>projets</span>
+            </div>
+            <div class="trust-sep" aria-hidden="true"></div>
+            <div class="trust-item">
+              <strong>1 ans</strong><span>d'expertise</span>
+            </div>
+            <div class="trust-sep" aria-hidden="true"></div>
+            <div class="trust-item">
+              <strong>98%</strong><span>satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne visuelle : carte flottante -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card__header">
+              <span class="hero-card__dot hero-card__dot--red"></span>
+              <span class="hero-card__dot hero-card__dot--amber"></span>
+              <span class="hero-card__dot hero-card__dot--green"></span>
+              <span class="hero-card__label">theo.studio</span>
+            </div>
+            <div class="hero-card__body">
+              <div class="code-line"><span class="code-kw">const</span> <span class="code-var">agence</span> = {</div>
+              <div class="code-line code-indent"><span class="code-key">expertise</span>: [<span class="code-str">"web"</span>, <span class="code-str">"com"</span>],</div>
+              <div class="code-line code-indent"><span class="code-key">clients</span>: <span class="code-str">"PME &amp; artisans"</span>,</div>
+              <div class="code-line code-indent"><span class="code-key">approche</span>: <span class="code-str">"sur-mesure"</span>,</div>
+              <div class="code-line code-indent"><span class="code-key">résultat</span>: <span class="code-fn">() =&gt;</span> 🚀</div>
+              <div class="code-line">}</div>
+              <div class="code-line code-cursor"></div>
+            </div>
+            <!-- Mini tags flottants -->
+            <div class="hero-card__tag hero-card__tag--1">SEO ✓</div>
+            <div class="hero-card__tag hero-card__tag--2">Branding ✓</div>
+            <div class="hero-card__tag hero-card__tag--3">Perf 100 ⚡</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll hint -->
+      <a href="#services" class="scroll-hint" aria-label="Défiler vers les services">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ================================================
+         SERVICES — La double expertise
+    ================================================ -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            Notre double expertise
+            <span class="eyebrow-line"></span>
+          </p>
+          <h2 class="section-title">
+            Une agence, <em>deux univers</em>,<br />une vision commune.
+          </h2>
+          <p class="section-desc">
+            Nous pensons développement et communication ensemble — pas en silo. Votre site et votre image de marque naissent du même ADN.
+          </p>
+        </header>
+
+        <!-- Grille services -->
+        <div class="services__grid">
+
+          <!-- Bloc Web -->
+          <article class="service-card service-card--web reveal reveal-delay-1">
+            <div class="service-card__accent" aria-hidden="true"></div>
+            <div class="service-card__icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="service-card__number" aria-hidden="true">01</div>
+            <h3 class="service-card__title">Création Web</h3>
+            <p class="service-card__desc">
+              Des sites pensés pour convertir vos visiteurs en clients. Rapides, accessibles et optimisés pour les moteurs de recherche.
+            </p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle"></i> Sites vitrines sur mesure</li>
+              <li><i class="fas fa-check-circle"></i> E-commerce (Shopify)</li>
+              <li><i class="fas fa-check-circle"></i> Performance &amp; SEO technique</li>
+              <li><i class="fas fa-check-circle"></i> Responsive &amp; accessibilité WCAG</li>
+              <li><i class="fas fa-check-circle"></i> Maintenance &amp; hébergement</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">
+              En savoir plus <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Diviseur central -->
+          <div class="services__divider reveal" aria-hidden="true">
+            <div class="services__divider-line"></div>
+            <div class="services__divider-icon">
+              <i class="fas fa-infinity"></i>
+            </div>
+            <div class="services__divider-line"></div>
+          </div>
+
+          <!-- Bloc Communication -->
+          <article class="service-card service-card--com reveal reveal-delay-2">
+            <div class="service-card__accent" aria-hidden="true"></div>
+            <div class="service-card__icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="service-card__number" aria-hidden="true">02</div>
+            <h3 class="service-card__title">Stratégie &amp; Com'</h3>
+            <p class="service-card__desc">
+              Une identité forte et une stratégie cohérente pour vous démarquer durablement et engager votre audience.
+            </p>
+            <ul class="service-card__list">
+              <li><i class="fas fa-check-circle"></i> Identité visuelle &amp; logo</li>
+              <li><i class="fas fa-check-circle"></i> Community management</li>
+              <li><i class="fas fa-check-circle"></i> Stratégie réseaux sociaux</li>
+              <li><i class="fas fa-check-circle"></i> Supports &amp; graphisme</li>
+              <li><i class="fas fa-check-circle"></i> Campagnes publicité digitale</li>
+            </ul>
+            <a href="#contact" class="service-card__cta">
+              En savoir plus <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- Bandeau offre combinée -->
+        <div class="services__combo reveal">
+          <div class="services__combo-text">
+            <i class="fas fa-bolt"></i>
+            <span>Optez pour notre <strong>offre combinée Web + Com'</strong> et bénéficiez d'une cohérence maximale à tarif préférentiel.</span>
+          </div>
+          <a href="#contact" class="btn btn--primary">Demander un devis</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================
+         APPROCHE — Pourquoi nous ?
+    ================================================ -->
+    <section id="approche" class="approche">
+      <div class="container">
+
+        <div class="approche__inner">
+
+          <!-- Colonne gauche : titre + avantages -->
+          <div class="approche__left">
+            <header class="section-header section-header--left reveal">
+              <p class="section-eyebrow section-eyebrow--left">
+                <span class="eyebrow-line"></span>
+                Pourquoi nous choisir
+              </p>
+              <h2 class="section-title">
+                L'<em>interlocuteur<br />unique</em> que vous<br />méritez.
+              </h2>
+              <p class="section-desc">
+                Fini les allers-retours entre agences. Chez Theo, une seule équipe orchestre votre présence web et votre image de marque — pour plus de cohérence et de sérénité.
+              </p>
+            </header>
+
+            <!-- Avantages -->
+            <div class="avantages">
+
+              <div class="avantage reveal reveal-delay-1">
+                <div class="avantage__icon avantage__icon--1">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="avantage__body">
+                  <h4>Un interlocuteur, zéro friction</h4>
+                  <p>Un chef de projet pilote web ET com'. Vous ne répétez jamais deux fois la même chose.</p>
+                </div>
+              </div>
+
+              <div class="avantage reveal reveal-delay-2">
+                <div class="avantage__icon avantage__icon--2">
+                  <i class="fas fa-ruler-combined"></i>
+                </div>
+                <div class="avantage__body">
+                  <h4>Du sur-mesure, pas des templates</h4>
+                  <p>Chaque solution naît de vos objectifs, votre secteur et vos clients — jamais d'un catalogue générique.</p>
+                </div>
+              </div>
+
+              <div class="avantage reveal reveal-delay-3">
+                <div class="avantage__icon avantage__icon--3">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="avantage__body">
+                  <h4>Proximité &amp; réactivité</h4>
+                  <p>Disponibles, transparents, à l'écoute. Vous savez toujours où en est votre projet.</p>
+                </div>
+              </div>
+
+              <div class="avantage reveal reveal-delay-4">
+                <div class="avantage__icon avantage__icon--4">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="avantage__body">
+                  <h4>Orientés résultats mesurables</h4>
+                  <p>Nos livrables génèrent du trafic, des leads et de la notoriété — pas juste de la beauté.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Colonne droite : stats + processus -->
+          <div class="approche__right reveal reveal-delay-1">
+
+            <!-- Stats -->
+            <div class="stats-grid">
+              <div class="stat">
+                <span class="stat__value">+120</span>
+                <span class="stat__label">Projets livrés</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">98%</span>
+                <span class="stat__label">Clients satisfaits</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">1 an</span>
+                <span class="stat__label">D'expertise</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">48h</span>
+                <span class="stat__label">Délai de réponse</span>
+              </div>
+            </div>
+
+            <!-- Processus -->
+            <div class="process">
+              <h3 class="process__title">Notre processus</h3>
+              <ol class="process__steps">
+                <li class="process__step">
+                  <span class="process__num">01</span>
+                  <div>
+                    <strong>Découverte</strong>
+                    <p>On écoute votre projet, vos ambitions, votre cible.</p>
+                  </div>
+                </li>
+                <li class="process__step">
+                  <span class="process__num">02</span>
+                  <div>
+                    <strong>Stratégie</strong>
+                    <p>On co-construit la feuille de route web + com'.</p>
+                  </div>
+                </li>
+                <li class="process__step">
+                  <span class="process__num">03</span>
+                  <div>
+                    <strong>Création</strong>
+                    <p>Design, développement et contenus en synergie.</p>
+                  </div>
+                </li>
+                <li class="process__step">
+                  <span class="process__num">04</span>
+                  <div>
+                    <strong>Lancement &amp; suivi</strong>
+                    <p>On déploie, on mesure, on optimise en continu.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CONTACT
+    ================================================ -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            Contactez-nous
+            <span class="eyebrow-line"></span>
+          </p>
+          <h2 class="section-title">
+            Prêt à faire <em>décoller</em><br />votre présence digitale ?
+          </h2>
+          <p class="section-desc">
+            Un premier échange, sans engagement, pour comprendre vos besoins et construire ensemble la solution la plus adaptée.
+          </p>
+        </header>
+
+        <div class="contact__wrapper">
+
+          <!-- Infos de contact -->
+          <aside class="contact__info reveal">
+
+            <ul class="contact__details">
+              <li>
+                <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
+                <span>7 rue de la gare, 68310 Wittelsheim</span>
+              </li>
+              <li>
+                <span class="contact__icon"><i class="fas fa-phone"></i></span>
+                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+              </li>
+              <li>
+                <span class="contact__icon"><i class="fas fa-envelope"></i></span>
+                <a href="mailto:hello@theo-agency.fr">hello@theo-agency.fr</a>
+              </li>
+            </ul>
+
+            <!-- Réseaux -->
+            <div class="contact__social">
+              <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-btn" aria-label="Behance"><i class="fab fa-behance"></i></a>
+              <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+
+            <!-- Citation -->
+            <blockquote class="contact__quote">
+              <p>« Le digital ne dort jamais. Votre image de marque non plus. »</p>
+              <cite>— L'équipe Theo</cite>
+            </blockquote>
+
+          </aside>
+
+          <!-- Formulaire -->
+          <div class="contact__form-wrapper reveal reveal-delay-2">
+            <form class="contact-form" id="contact-form" novalidate>
+
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="prenom">Prénom <span aria-hidden="true">*</span></label>
+                  <input type="text" id="prenom" name="prenom" placeholder="Jean" autocomplete="given-name" required />
+                </div>
+                <div class="form__group">
+                  <label for="nom">Nom <span aria-hidden="true">*</span></label>
+                  <input type="text" id="nom" name="nom" placeholder="Dupont" autocomplete="family-name" required />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jean.dupont@exemple.fr" autocomplete="email" required />
+              </div>
+
+              <div class="form__group">
+                <label for="besoin">Votre besoin principal</label>
+                <div class="select-wrapper">
+                  <select id="besoin" name="besoin">
+                    <option value="" disabled selected>Sélectionner…</option>
+                    <option>Site vitrine</option>
+                    <option>E-commerce</option>
+                    <option>Identité visuelle</option>
+                    <option>Community management</option>
+                    <option>Stratégie digitale complète</option>
+                    <option>Autre</option>
+                  </select>
+                  <i class="fas fa-chevron-down select-arrow" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label for="message">Votre projet <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" placeholder="Parlez-nous de votre activité, vos objectifs, votre budget approximatif…" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block">
+                <i class="fas fa-paper-plane"></i> Envoyer ma demande
+              </button>
+
+              <p class="form__legal">Vos données ne sont jamais partagées à des tiers.</p>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#accueil" class="logo">
+        <div class="logo__mark"><span class="logo__slash">/</span></div>
+        <span class="logo__name">Theo<em>ra</em></span>
+      </a>
+      <p class="footer__copy">© 2025 Theo Agency. Tous droits réservés.</p>
+      <nav class="footer__links" aria-label="Liens légaux">
+        <a href="../SiteVitrine/mention.html">Mentions légales</a>
+        <a href="../SiteVitrine/confidentialite.html">Confidentialité</a>
+        <a href="../SiteVitrine/cgv.html">CGV</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Script externe -->
+  <script src="script.js"></script>
+
+</body>
+</html>

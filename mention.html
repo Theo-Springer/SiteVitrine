@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions Légales — Theo Agency</title>
+  <meta name="description" content="Mentions légales de l'agence Theo — informations sur l'éditeur, l'hébergeur, les données personnelles et les droits de propriété intellectuelle." />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Style principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Toggle thème -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+    <span class="theme-toggle__icon theme-toggle__icon--moon"><i class="fas fa-moon"></i></span>
+    <span class="theme-toggle__icon theme-toggle__icon--sun"><i class="fas fa-sun"></i></span>
+  </button>
+
+  <!-- ─── HEADER ─── -->
+  <header id="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__mark"><span class="logo__slash">/</span></div>
+        <span class="logo__name">Theo<em>ra</em></span>
+      </a>
+      <nav id="main-nav" aria-label="Navigation principale">
+        <a href="index.html#accueil"  class="nav__link" data-close>Accueil</a>
+        <a href="index.html#services" class="nav__link" data-close>Services</a>
+        <a href="index.html#approche" class="nav__link" data-close>Approche</a>
+        <a href="index.html#contact"  class="nav__link" data-close>Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a href="index.html#contact" class="btn btn--primary">
+          <i class="fas fa-paper-plane"></i>
+          <span>Demander un devis</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO COMPACT ─── -->
+    <div class="ml-hero">
+      <div class="ml-hero__bg" aria-hidden="true">
+        <div class="ml-hero__orb ml-hero__orb--1"></div>
+        <div class="ml-hero__orb ml-hero__orb--2"></div>
+        <div class="ml-hero__grid"></div>
+      </div>
+      <div class="container ml-hero__inner">
+        <div class="ml-hero__breadcrumb">
+          <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Mentions légales</span>
+        </div>
+        <div class="ml-hero__tag">
+          <i class="fas fa-scale-balanced"></i>
+          Informations légales
+        </div>
+        <h1 class="ml-hero__title">
+          Mentions <em>légales</em>
+        </h1>
+        <div class="ml-hero__meta">
+          <span><i class="fas fa-calendar-alt"></i> Dernière mise à jour : 1er janvier 2026</span>
+          <span><i class="fas fa-building"></i> Theo Agency SAS</span>
+          <span><i class="fas fa-map-marker-alt"></i> Wittelsheim, France</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── LAYOUT : SIDEBAR + CONTENU ─── -->
+    <div class="ml-layout">
+      <div class="container ml-layout__inner">
+
+        <!-- Sommaire latéral -->
+        <aside class="ml-sidebar">
+          <nav class="ml-nav" aria-label="Sommaire des mentions légales">
+            <p class="ml-nav__title"><i class="fas fa-list" style="margin-right:6px;color:var(--brand-terra)"></i></p>
+            <ol class="ml-nav__list">
+              <li class="ml-nav__item">
+                <a href="#editeur"><i class="fas fa-building"></i>Éditeur du site<span class="ml-nav__num">01</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#hebergeur"><i class="fas fa-server"></i>Hébergeur<span class="ml-nav__num">02</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#propriete"><i class="fas fa-copyright"></i>Propriété intellectuelle<span class="ml-nav__num">03</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#donnees"><i class="fas fa-shield-halved"></i>Données personnelles<span class="ml-nav__num">04</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#cookies"><i class="fas fa-cookie-bite"></i>Cookies<span class="ml-nav__num">05</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#responsabilite"><i class="fas fa-gavel"></i>Responsabilité<span class="ml-nav__num">06</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#liens"><i class="fas fa-link"></i>Liens hypertextes<span class="ml-nav__num">07</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#droit"><i class="fas fa-balance-scale"></i>Droit applicable<span class="ml-nav__num">08</span></a>
+              </li>
+              <li class="ml-nav__item">
+                <a href="#contact-ml"><i class="fas fa-envelope"></i>Nous contacter<span class="ml-nav__num">09</span></a>
+              </li>
+            </ol>
+            <a href="index.html" class="ml-nav__back">
+ 
+            </a>
+          </nav>
+        </aside>
+
+        <!-- Contenu des mentions légales -->
+        <div class="ml-content">
+
+          <!-- 01 – Éditeur -->
+          <article class="ml-section reveal" id="editeur">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--sage"><i class="fas fa-building"></i></div>
+              <div>
+                <span class="ml-section__num">Article 01</span>
+                <h2 class="ml-section__title">Éditeur du site</h2>
+              </div>
+            </div>
+            <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique (LCEN), les informations relatives à l'identité de l'éditeur du site <strong>theo-agency.fr</strong> sont les suivantes :</p>
+
+            <div class="ml-table-wrapper">
+              <table class="ml-table">
+                <thead>
+                  <tr>
+                    <th>Champ</th>
+                    <th>Information</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Raison sociale</td><td>Nexora Agency SAS</td></tr>
+                  <tr><td>Forme juridique</td><td>Entreprise individuelle</td></tr>
+                  <tr><td>Siège social</td><td>7 rue de la gare, 68310 Wittelsheim, France</td></tr>
+                  <tr><td>SIRET</td><td>10551449100015</td></tr>
+                  <tr><td>N° TVA intracommunautaire</td><td>[À compléter]</td></tr>
+                  <tr><td>Directeur de publication</td><td>Théo SPRINGER</td></tr>
+                  <tr><td>Email</td><td><a href="mailto:hello@nexora-agency.fr">hello@nexora-agency.fr</a></td></tr>
+                  <tr><td>Téléphone</td><td><a href="tel:+33123456789">+33 1 23 45 67 89</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="ml-infobox">
+              <strong>Note :</strong> Les champs marqués <em>[À compléter]</em> doivent être renseignés avec vos informations réelles avant la mise en ligne du site. Des mentions légales incomplètes exposent à des sanctions prévues par la LCEN.
+            </div>
+          </article>
+
+          <!-- 02 – Hébergeur -->
+          <article class="ml-section reveal" id="hebergeur">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--teal"><i class="fas fa-server"></i></div>
+              <div>
+                <span class="ml-section__num">Article 02</span>
+                <h2 class="ml-section__title">Hébergeur</h2>
+              </div>
+            </div>
+            <p>Le site <strong>nexora-agency.fr</strong> est hébergé par :</p>
+            <div class="ml-table-wrapper">
+              <table class="ml-table">
+                <thead><tr><th>Champ</th><th>Information</th></tr></thead>
+                <tbody>
+                  <tr><td>Société</td><td>[Nom de l'hébergeur]</td></tr>
+                  <tr><td>Adresse</td><td>[Adresse de l'hébergeur]</td></tr>
+                  <tr><td>Site web</td><td><a href="#" target="_blank" rel="noopener noreferrer">[URL de l'hébergeur]</a></td></tr>
+                  <tr><td>Téléphone</td><td>[Téléphone de l'hébergeur]</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>En cas d'hébergement sur un serveur cloud (OVHcloud, Scaleway, AWS, etc.), les données sont hébergées sur des serveurs situés sur le territoire de l'Union européenne, conformément au RGPD.</p>
+          </article>
+
+          <!-- 03 – Propriété intellectuelle -->
+          <article class="ml-section reveal" id="propriete">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--gold"><i class="fas fa-copyright"></i></div>
+              <div>
+                <span class="ml-section__num">Article 03</span>
+                <h2 class="ml-section__title">Propriété intellectuelle</h2>
+              </div>
+            </div>
+            <p>L'ensemble du contenu présent sur le site <strong>nexora-agency.fr</strong> — textes, images, graphismes, logos, vidéos, icônes, illustrations, sons et logiciels — est la propriété exclusive de <strong>Nexora Agency SAS</strong> ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+
+            <ul class="ml-list">
+              <li>Toute reproduction, représentation, modification, publication, adaptation, totale ou partielle, est strictement interdite sans autorisation écrite préalable de Nexora Agency.</li>
+              <li>Toute utilisation commerciale des éléments du site sans accord exprès constitue une contrefaçon sanctionnée par les articles L335-2 et suivants du Code de la propriété intellectuelle.</li>
+              <li>Les marques et logos présents sur le site sont des marques déposées. Toute reproduction est interdite.</li>
+              <li>Les droits d'utilisation concédés à l'utilisateur sont strictement limités à un usage privé et non commercial.</li>
+            </ul>
+
+            <div class="ml-infobox--terra ml-infobox">
+              Pour toute demande d'utilisation d'un élément du site, contactez-nous à <a href="mailto:hello@nexora-agency.fr">hello@nexora-agency.fr</a>. Toute autorisation est accordée par écrit uniquement.
+            </div>
+          </article>
+
+          <!-- 04 – Données personnelles -->
+          <article class="ml-section reveal" id="donnees">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--violet"><i class="fas fa-shield-halved"></i></div>
+              <div>
+                <span class="ml-section__num">Article 04</span>
+                <h2 class="ml-section__title">Protection des données personnelles</h2>
+              </div>
+            </div>
+            <p>Conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée, Nexora Agency s'engage à protéger vos données personnelles.</p>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Données collectées</h3>
+            <p>Lors de l'utilisation de notre formulaire de contact, les données suivantes sont susceptibles d'être collectées :</p>
+            <ul class="ml-list">
+              <li>Nom et prénom</li>
+              <li>Adresse email</li>
+              <li>Numéro de téléphone (si renseigné)</li>
+              <li>Contenu du message et nature de la demande</li>
+            </ul>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Finalité et base légale</h3>
+            <p>Ces données sont collectées sur la base de votre <strong>consentement explicite</strong> (soumission du formulaire) et traitées uniquement dans le but de répondre à vos demandes de contact et, le cas échéant, d'établir une relation commerciale.</p>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Durée de conservation</h3>
+            <p>Vos données sont conservées pendant une durée maximale de <strong>3 ans</strong> à compter du dernier contact, puis supprimées ou anonymisées.</p>
+
+            <h3 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:20px 0 10px;transition:color var(--t-slow);">Vos droits</h3>
+            <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+            <ul class="ml-list">
+              <li><strong>Droit d'accès</strong> : obtenir une copie de vos données personnelles détenues par Nexora Agency.</li>
+              <li><strong>Droit de rectification</strong> : corriger des données inexactes ou incomplètes.</li>
+              <li><strong>Droit à l'effacement</strong> (« droit à l'oubli ») : demander la suppression de vos données.</li>
+              <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré et lisible.</li>
+              <li><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données à des fins de prospection.</li>
+              <li><strong>Droit à la limitation</strong> : demander la suspension temporaire du traitement.</li>
+            </ul>
+
+            <div class="ml-infobox">
+              Pour exercer l'un de ces droits, adressez votre demande par email à <a href="mailto:dpo@nexora-agency.fr">dpo@nexora-agency.fr</a> ou par courrier à notre siège social. Vous pouvez également adresser une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a> (Commission Nationale de l'Informatique et des Libertés).
+            </div>
+          </article>
+
+          <!-- 05 – Cookies -->
+          <article class="ml-section reveal" id="cookies">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--terra"><i class="fas fa-cookie-bite"></i></div>
+              <div>
+                <span class="ml-section__num">Article 05</span>
+                <h2 class="ml-section__title">Politique de cookies</h2>
+              </div>
+            </div>
+            <p>Un cookie est un petit fichier texte déposé sur votre terminal lors de la visite d'un site web. Le site <strong>nexora-agency.fr</strong> est susceptible d'utiliser les types de cookies suivants :</p>
+
+            <div class="ml-table-wrapper">
+              <table class="ml-table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Finalité</th>
+                    <th>Durée</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cookies techniques</td>
+                    <td>Mémorisation de votre préférence de thème (clair/sombre)</td>
+                    <td>1 an</td>
+                  </tr>
+                  <tr>
+                    <td>Cookies de session</td>
+                    <td>Maintien de votre session et sécurité de navigation</td>
+                    <td>Session</td>
+                  </tr>
+                  <tr>
+                    <td>Cookies analytiques</td>
+                    <td>Mesure d'audience anonymisée (si activés)</td>
+                    <td>13 mois</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Les cookies strictement nécessaires au fonctionnement du site (ex. : mémorisation du thème) ne nécessitent pas votre consentement préalable. Les cookies analytiques ne sont déposés qu'avec votre accord explicite.</p>
+            <p>Vous pouvez à tout moment désactiver les cookies depuis les paramètres de votre navigateur. Cette désactivation peut toutefois affecter certaines fonctionnalités du site.</p>
+          </article>
+
+          <!-- 06 – Responsabilité -->
+          <article class="ml-section reveal" id="responsabilite">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--slate"><i class="fas fa-gavel"></i></div>
+              <div>
+                <span class="ml-section__num">Article 06</span>
+                <h2 class="ml-section__title">Limitation de responsabilité</h2>
+              </div>
+            </div>
+            <p>Nexora Agency met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, Nexora Agency <strong>ne peut garantir</strong> l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.</p>
+            <ul class="ml-list">
+              <li>Nexora Agency décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site.</li>
+              <li>Nexora Agency ne saurait être tenue responsable des dommages directs ou indirects résultant de l'utilisation des informations publiées sur ce site.</li>
+              <li>En cas d'indisponibilité temporaire du site pour cause de maintenance ou d'incident technique, Nexora Agency ne peut être tenue responsable des conséquences de cette interruption.</li>
+              <li>Les informations contenues sur ce site ne constituent pas un conseil juridique, fiscal ou financier.</li>
+            </ul>
+          </article>
+
+          <!-- 07 – Liens hypertextes -->
+          <article class="ml-section reveal" id="liens">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--teal"><i class="fas fa-link"></i></div>
+              <div>
+                <span class="ml-section__num">Article 07</span>
+                <h2 class="ml-section__title">Liens hypertextes</h2>
+              </div>
+            </div>
+            <p>Le site <strong>nexora-agency.fr</strong> peut contenir des liens vers d'autres sites internet. Ces liens sont proposés à titre informatif. Nexora Agency n'exerce aucun contrôle sur ces sites tiers et décline toute responsabilité quant à leur contenu, leurs pratiques de confidentialité ou leurs politiques de cookies.</p>
+            <p>Tout lien hypertexte pointant vers le site nexora-agency.fr doit faire l'objet d'une <strong>autorisation préalable et écrite</strong> de Nexora Agency, sauf pour les liens simples et non équivoques pointant vers la page d'accueil.</p>
+          </article>
+
+          <!-- 08 – Droit applicable -->
+          <article class="ml-section reveal" id="droit">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--gold"><i class="fas fa-balance-scale"></i></div>
+              <div>
+                <span class="ml-section__num">Article 08</span>
+                <h2 class="ml-section__title">Droit applicable et juridiction</h2>
+              </div>
+            </div>
+            <p>Les présentes mentions légales sont soumises au <strong>droit français</strong>. En cas de litige relatif à l'interprétation ou à l'exécution des présentes, les tribunaux français seront seuls compétents.</p>
+            <p>Tout litige sera soumis à la compétence exclusive des <strong>tribunaux du ressort de Paris</strong>, sauf disposition légale contraire impérative.</p>
+            <div class="ml-infobox">
+              Conformément à l'article 14.1 du règlement (UE) n° 524/2013, la Commission européenne a mis en place une plateforme de règlement en ligne des litiges (RLL) accessible à l'adresse : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.
+            </div>
+          </article>
+
+          <!-- 09 – Contact -->
+          <article class="ml-section reveal" id="contact-ml">
+            <div class="ml-section__header">
+              <div class="ml-section__icon icon--sage"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="ml-section__num">Article 09</span>
+                <h2 class="ml-section__title">Nous contacter</h2>
+              </div>
+            </div>
+            <p>Pour toute question relative aux présentes mentions légales, à l'exercice de vos droits ou à l'utilisation du site, vous pouvez nous contacter :</p>
+
+            <div class="ml-contact-card">
+              <div class="ml-contact-card__icon"><i class="fas fa-headset"></i></div>
+              <div class="ml-contact-card__body">
+                <h4>L'équipe Nexora Agency</h4>
+                <p>
+                  Par email : <a href="mailto:hello@nexora-agency.fr">hello@nexora-agency.fr</a><br />
+                  Par courrier : 12 rue du Digital, 75000 Paris<br />
+                  Par téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                </p>
+              </div>
+              <a href="index.html#contact" class="btn btn--primary">
+                <i class="fas fa-paper-plane"></i> Formulaire de contact
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.ml-content -->
+      </div><!-- /.ml-layout__inner -->
+    </div><!-- /.ml-layout -->
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__mark"><span class="logo__slash">/</span></div>
+        <span class="logo__name">Nexo<em>ra</em></span>
+      </a>
+      <p class="footer__copy">© 2025 Nexora Agency. Tous droits réservés.</p>
+      <nav class="footer__links" aria-label="Liens légaux">
+        <a href="mentions-legales.html" style="color:var(--brand-sage);">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">CGV</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
