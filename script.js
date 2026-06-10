@@ -62,22 +62,24 @@
   let navOpen     = false;
 
   function openNav() {
-    navOpen = true;
-    mainNav.classList.add('open');
-    navToggle.classList.add('open');
-    navToggle.setAttribute('aria-expanded', 'true');
-    navToggle.setAttribute('aria-label', 'Fermer le menu');
-    document.body.style.overflow = 'hidden';
-  }
+  navOpen = true;
+  mainNav.classList.add('open');
+  navToggle.classList.add('open');
+  navToggle.setAttribute('aria-expanded', 'true');
+  navToggle.setAttribute('aria-label', 'Fermer le menu');
+  document.body.style.overflow = 'hidden';
+  header?.classList.add('nav-is-open'); // ← ajouter
+}
 
   function closeNav() {
-    navOpen = false;
-    mainNav.classList.remove('open');
-    navToggle.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-    navToggle.setAttribute('aria-label', 'Ouvrir le menu');
-    document.body.style.overflow = '';
-  }
+  navOpen = false;
+  mainNav.classList.remove('open');
+  navToggle.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', 'Ouvrir le menu');
+  document.body.style.overflow = '';
+  header?.classList.remove('nav-is-open'); // ← ajouter
+}
 
   navToggle?.addEventListener('click', () => navOpen ? closeNav() : openNav());
 

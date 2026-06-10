@@ -315,11 +315,18 @@ em.hero__title-em--alt {
   padding: 16px 0;
   transition: background var(--t-normal), backdrop-filter var(--t-normal), border-bottom var(--t-normal);
 }
+
 #site-header.scrolled {
   background: var(--bg-overlay);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
+}
+
+#site-header:has(+ * #main-nav.open),
+body:has(#main-nav.open) #site-header {
+  backdrop-filter: none ;
+  -webkit-backdrop-filter: none ;
 }
 
 .header__inner {
@@ -1133,22 +1140,25 @@ textarea { min-height: 120px; resize: vertical; }
   .container  { padding: 0 16px; }
   .sp-2xl     { padding: 64px 0; }
 
-  #main-nav {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: var(--bg-overlay);
-    backdrop-filter: blur(28px);
-    -webkit-backdrop-filter: blur(28px);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    z-index: 999;
-    padding: 80px 24px 40px;
-  }
-  #main-nav.open {
-    display: flex;
+#main-nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg-overlay) !important;
+  backdrop-filter: blur(28px) !important;
+  -webkit-backdrop-filter: blur(28px) !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  z-index: 999;
+  padding: 80px 24px 40px;
+  /* Isolation du contexte de stacking */
+  isolation: isolate;
+}
+#main-nav.open {
+  display: flex;
+}
   }
   #main-nav .nav__link {
     font-size: 1.7rem;
@@ -1257,7 +1267,7 @@ textarea { min-height: 120px; resize: vertical; }
   .footer__links { justify-content: center; flex-wrap: wrap; gap: 14px; }
 
   .theme-toggle { bottom: 16px; right: 16px; width: 44px; height: 44px; }
-}
+
 
 
 /* ============================================================
