@@ -14,35 +14,25 @@
 
 <body>
 
-  <!-- ================================================
-       TOGGLE DARK / LIGHT — bouton flottant
-  ================================================ -->
   <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
     <span class="theme-toggle__icon theme-toggle__icon--moon"><i class="fas fa-moon"></i></span>
     <span class="theme-toggle__icon theme-toggle__icon--sun"><i class="fas fa-sun"></i></span>
-    <span class="theme-toggle__track"></span>
   </button>
 
-  <!-- ================================================
-       NAVIGATION
-  ================================================ -->
+  <!-- ── HEADER ── -->
   <header id="site-header">
     <div class="container header__inner">
-
       <a href="#accueil" class="logo">
-        <div class="logo__mark">
-          <span class="logo__slash">/</span>
-        </div>
+        <div class="logo__mark"><span class="logo__slash">/</span></div>
         <span class="logo__name">Rewind <em>Studio</em></span>
       </a>
-
       <nav id="main-nav" aria-label="Navigation principale">
-        <a href="#accueil"  class="nav__link" data-close>Accueil</a>
-        <a href="#services" class="nav__link" data-close>Services</a>
-        <a href="#approche" class="nav__link" data-close>Approche</a>
-        <a href="#contact"  class="nav__link" data-close>Contact</a>
+        <a href="#accueil"   class="nav__link" data-close>Accueil</a>
+        <a href="#services"  class="nav__link" data-close>Services</a>
+        <a href="#secteurs"  class="nav__link" data-close>Secteurs</a>
+        <a href="#approche"  class="nav__link" data-close>Approche</a>
+        <a href="#contact"   class="nav__link" data-close>Contact</a>
       </nav>
-
       <div class="header__actions">
         <a href="#contact" class="btn btn--primary">
           <i class="fas fa-paper-plane"></i>
@@ -54,26 +44,21 @@
           <span class="nav-toggle__bar"></span>
         </button>
       </div>
-
     </div>
   </header>
 
   <main>
 
-    <!-- ================================================
-         HERO — Section Accueil
-    ================================================ -->
+    <!-- ── HERO ── -->
     <section id="accueil" class="hero">
-
       <div class="hero__bg" aria-hidden="true">
         <div class="hero__orb hero__orb--1"></div>
         <div class="hero__orb hero__orb--2"></div>
         <div class="hero__grid"></div>
       </div>
 
-      <div class="container hero__inner">
-
-        <div class="hero__content">
+      <div class="container hero__inner hero__inner--centered">
+        <div class="hero__content hero__content--centered">
 
           <div class="hero__badge">
             <span class="hero__badge-dot"></span>
@@ -81,15 +66,12 @@
           </div>
 
           <h1 class="hero__title">
-            Le site qui<br />
-            <em class="hero__title-em">performe</em>,<br />
-            la marque qui<br />
-            <em class="hero__title-em hero__title-em--alt">résonne</em>.
+            Le site qui <em class="hero__title-em">performe</em>,<br />
+            la marque qui <em class="hero__title-em hero__title-em--alt">résonne</em>.
           </h1>
 
           <p class="hero__subtitle">
-            Un interlocuteur unique pour votre développement web <em>et</em> votre communication de marque.
-            Nous aidons PME, artisans et commerçants à bâtir une présence digitale cohérente et durable.
+            PME, artisans, commerçants — nous bâtissons votre présence digitale de A à Z, avec une seule promesse : <em>cohérence et résultats mesurables</em>.
           </p>
 
           <div class="hero__cta">
@@ -103,42 +85,18 @@
 
           <div class="hero__trust">
             <div class="trust-item">
-              <strong>+20</strong><span>projets</span>
+              <strong class="stat__value">+20</strong><span>projets livrés</span>
             </div>
             <div class="trust-sep" aria-hidden="true"></div>
             <div class="trust-item">
-              <strong>1 ans</strong><span>d'expertise</span>
+              <strong class="stat__value">1 an</strong><span>d'expertise</span>
             </div>
             <div class="trust-sep" aria-hidden="true"></div>
             <div class="trust-item">
-              <strong>98%</strong><span>satisfaction</span>
+              <strong class="stat__value">98%</strong><span>satisfaction</span>
             </div>
           </div>
         </div>
-
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero-card">
-            <div class="hero-card__header">
-              <span class="hero-card__dot hero-card__dot--red"></span>
-              <span class="hero-card__dot hero-card__dot--amber"></span>
-              <span class="hero-card__dot hero-card__dot--green"></span>
-              <span class="hero-card__label">Rewind</span>
-            </div>
-            <div class="hero-card__body">
-              <div class="code-line"><span class="code-kw">const</span> <span class="code-var">agence</span> = {</div>
-              <div class="code-line code-indent"><span class="code-key">expertise</span>: [<span class="code-str">"web"</span>, <span class="code-str">"com"</span>],</div>
-              <div class="code-line code-indent"><span class="code-key">clients</span>: <span class="code-str">"PME &amp; artisans"</span>,</div>
-              <div class="code-line code-indent"><span class="code-key">approche</span>: <span class="code-str">"sur-mesure"</span>,</div>
-              <div class="code-line code-indent"><span class="code-key">résultat</span>: <span class="code-fn">() =&gt;</span> 🚀</div>
-              <div class="code-line">}</div>
-              <div class="code-line code-cursor"></div>
-            </div>
-            <div class="hero-card__tag hero-card__tag--1">SEO ✓</div>
-            <div class="hero-card__tag hero-card__tag--2">Branding ✓</div>
-            <div class="hero-card__tag hero-card__tag--3">Perf 100 ⚡</div>
-          </div>
-        </div>
-
       </div>
 
       <a href="#services" class="scroll-hint" aria-label="Défiler vers les services">
@@ -146,9 +104,7 @@
       </a>
     </section>
 
-    <!-- ================================================
-         SERVICES — La double expertise
-    ================================================ -->
+    <!-- ── SERVICES ── -->
     <section id="services" class="services">
       <div class="container">
 
@@ -170,9 +126,7 @@
 
           <article class="service-card service-card--web reveal reveal-delay-1">
             <div class="service-card__accent" aria-hidden="true"></div>
-            <div class="service-card__icon">
-              <i class="fas fa-code"></i>
-            </div>
+            <div class="service-card__icon"><i class="fas fa-code"></i></div>
             <div class="service-card__number" aria-hidden="true">01</div>
             <h3 class="service-card__title">Création Web</h3>
             <p class="service-card__desc">
@@ -192,17 +146,13 @@
 
           <div class="services__divider reveal" aria-hidden="true">
             <div class="services__divider-line"></div>
-            <div class="services__divider-icon">
-              <i class="fas fa-infinity"></i>
-            </div>
+            <div class="services__divider-icon"><i class="fas fa-infinity"></i></div>
             <div class="services__divider-line"></div>
           </div>
 
           <article class="service-card service-card--com reveal reveal-delay-2">
             <div class="service-card__accent" aria-hidden="true"></div>
-            <div class="service-card__icon">
-              <i class="fas fa-palette"></i>
-            </div>
+            <div class="service-card__icon"><i class="fas fa-palette"></i></div>
             <div class="service-card__number" aria-hidden="true">02</div>
             <h3 class="service-card__title">Stratégie &amp; Com'</h3>
             <p class="service-card__desc">
@@ -233,9 +183,257 @@
       </div>
     </section>
 
-    <!-- ================================================
-         APPROCHE — Pourquoi nous ?
-    ================================================ -->
+    <!-- ── SECTEURS D'ACTIVITÉ ── -->
+    <section id="secteurs" class="secteurs">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            Domaines d'activité
+            <span class="eyebrow-line"></span>
+          </p>
+          <h2 class="section-title">
+            Nous travaillons pour <em>tous les secteurs</em>.
+          </h2>
+          <p class="section-desc">
+            Artisan, restaurateur, professionnel de santé, promoteur immobilier… chaque métier a ses codes. Nous les maîtrisons.
+          </p>
+        </header>
+
+        <div class="secteurs__grid">
+
+          <div class="secteur-card reveal reveal-delay-1">
+            <div class="secteur-card__icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="secteur-card__name">Artisanat &amp; BTP</h3>
+            <p class="secteur-card__desc">Plombiers, électriciens, menuisiers, maçons — valorisez votre savoir-faire.</p>
+          </div>
+
+          <div class="secteur-card reveal reveal-delay-2">
+            <div class="secteur-card__icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3 class="secteur-card__name">Restauration</h3>
+            <p class="secteur-card__desc">Menus en ligne, réservations, réseaux sociaux appétissants.</p>
+          </div>
+
+          <div class="secteur-card reveal reveal-delay-3">
+            <div class="secteur-card__icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <h3 class="secteur-card__name">Santé &amp; Bien-être</h3>
+            <p class="secteur-card__desc">Kinés, ostéopathes, coaches — une présence rassurante et professionnelle.</p>
+          </div>
+
+          <div class="secteur-card reveal reveal-delay-1">
+            <div class="secteur-card__icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3 class="secteur-card__name">Immobilier</h3>
+            <p class="secteur-card__desc">Agences, promoteurs, constructeurs — des vitrines digitales à la hauteur.</p>
+          </div>
+
+          <div class="secteur-card reveal reveal-delay-2">
+            <div class="secteur-card__icon">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <h3 class="secteur-card__name">Commerce &amp; Retail</h3>
+            <p class="secteur-card__desc">Boutiques physiques et e-commerce — attirez et fidélisez vos clients.</p>
+          </div>
+
+          <div class="secteur-card reveal reveal-delay-3">
+            <div class="secteur-card__icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="secteur-card__name">Services B2B</h3>
+            <p class="secteur-card__desc">Cabinets, consultants, agences — assoiez votre crédibilité en ligne.</p>
+          </div>
+
+          <div class="secteur-card reveal reveal-delay-1">
+            <div class="secteur-card__icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="secteur-card__name">Éducation &amp; Formation</h3>
+            <p class="secteur-card__desc">Écoles, formateurs, organismes — communiquez avec impact.</p>
+          </div>
+
+          <div class="secteur-card reveal reveal-delay-2">
+            <div class="secteur-card__icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3 class="secteur-card__name">Agriculture &amp; Local</h3>
+            <p class="secteur-card__desc">Producteurs, coopératives, circuits courts — racontez votre histoire.</p>
+          </div>
+
+          <div class="secteur-card secteur-card--cta reveal reveal-delay-3">
+            <div class="secteur-card__icon secteur-card__icon--cta">
+              <i class="fas fa-plus"></i>
+            </div>
+            <h3 class="secteur-card__name">Votre secteur</h3>
+            <p class="secteur-card__desc">Votre activité n'est pas listée ? On s'adapte à n'importe quel métier.</p>
+            <a href="#contact" class="secteur-card__link">Parlons-en <i class="fas fa-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ILS NOUS FONT CONFIANCE ── -->
+    <section id="confiance" class="confiance">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">
+            <span class="eyebrow-line"></span>
+            Ils nous font confiance
+            <span class="eyebrow-line"></span>
+          </p>
+          <h2 class="section-title">
+            Des entreprises locales qui ont <em>osé le changement</em>.
+          </h2>
+        </header>
+
+      </div>
+
+      <!-- Frise défilante — pleine largeur -->
+      <div class="logos-track-wrapper" aria-label="Nos clients">
+        <div class="logos-track">
+          <div class="logos-track__inner">
+
+            <!-- Lot 1 -->
+            <div class="logo-pill">
+              <i class="fas fa-hammer"></i>
+              <span>Maçonnerie Schmitt</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-utensils"></i>
+              <span>La Table d'Alsace</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-home"></i>
+              <span>Immo Vallée</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-heartbeat"></i>
+              <span>Centre Kiné 68</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-shopping-bag"></i>
+              <span>Boutique Tendance</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-car"></i>
+              <span>Garage Müller</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-leaf"></i>
+              <span>Ferme du Sundgau</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-graduation-cap"></i>
+              <span>École des Métiers</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-paint-brush"></i>
+              <span>Déco &amp; Co</span>
+            </div>
+            <div class="logo-pill">
+              <i class="fas fa-briefcase"></i>
+              <span>Cabinet RH Pro</span>
+            </div>
+
+            <!-- Lot 2 — copie pour boucle infinie -->
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-hammer"></i>
+              <span>Maçonnerie Schmitt</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-utensils"></i>
+              <span>La Table d'Alsace</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-home"></i>
+              <span>Immo Vallée</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-heartbeat"></i>
+              <span>Centre Kiné 68</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-shopping-bag"></i>
+              <span>Boutique Tendance</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-car"></i>
+              <span>Garage Müller</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-leaf"></i>
+              <span>Ferme du Sundgau</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-graduation-cap"></i>
+              <span>École des Métiers</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-paint-brush"></i>
+              <span>Déco &amp; Co</span>
+            </div>
+            <div class="logo-pill" aria-hidden="true">
+              <i class="fas fa-briefcase"></i>
+              <span>Cabinet RH Pro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Témoignage client -->
+      <div class="container">
+        <div class="temoignages reveal">
+
+          <blockquote class="temoignage">
+            <div class="temoignage__quote">"</div>
+            <p class="temoignage__text">Rewind a tout compris dès le premier appel. En six semaines, notre site était en ligne et les demandes de devis ont doublé. Je recommande sans hésiter.</p>
+            <footer class="temoignage__footer">
+              <div class="temoignage__avatar">M</div>
+              <div>
+                <strong>Martin K.</strong>
+                <span>Gérant, Maçonnerie Schmitt</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="temoignage">
+            <div class="temoignage__quote">"</div>
+            <p class="temoignage__text">Notre présence Instagram a explosé depuis qu'on travaille avec Théo. On sent que c'est quelqu'un qui connaît vraiment notre secteur, pas un prestataire générique.</p>
+            <footer class="temoignage__footer">
+              <div class="temoignage__avatar temoignage__avatar--terra">S</div>
+              <div>
+                <strong>Sophie L.</strong>
+                <span>Propriétaire, La Table d'Alsace</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="temoignage">
+            <div class="temoignage__quote">"</div>
+            <p class="temoignage__text">Un seul interlocuteur pour le site et les réseaux, c'est un luxe qu'on ne soupçonnait pas. Le résultat est cohérent, pro, et ça nous fait gagner un temps fou.</p>
+            <footer class="temoignage__footer">
+              <div class="temoignage__avatar temoignage__avatar--gold">A</div>
+              <div>
+                <strong>Antoine R.</strong>
+                <span>Directeur, Immo Vallée</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── APPROCHE ── -->
     <section id="approche" class="approche">
       <div class="container">
 
@@ -249,7 +447,7 @@
                 <span class="eyebrow-line"></span>
               </p>
               <h2 class="section-title">
-                L'<em>interlocuteur<br />unique</em> que vous<br />méritez.
+                L'<em>interlocuteur unique</em><br />que vous méritez.
               </h2>
               <p class="section-desc">
                 Fini les allers-retours entre agences. Chez Rewind, une seule équipe orchestre votre présence web et votre image de marque — pour plus de cohérence et de sérénité.
@@ -257,47 +455,34 @@
             </header>
 
             <div class="avantages">
-
               <div class="avantage reveal reveal-delay-1">
-                <div class="avantage__icon avantage__icon--1">
-                  <i class="fas fa-user-tie"></i>
-                </div>
+                <div class="avantage__icon avantage__icon--1"><i class="fas fa-user-tie"></i></div>
                 <div class="avantage__body">
                   <h4>Un interlocuteur, zéro friction</h4>
                   <p>Un chef de projet pilote web ET com'. Vous ne répétez jamais deux fois la même chose.</p>
                 </div>
               </div>
-
               <div class="avantage reveal reveal-delay-2">
-                <div class="avantage__icon avantage__icon--2">
-                  <i class="fas fa-ruler-combined"></i>
-                </div>
+                <div class="avantage__icon avantage__icon--2"><i class="fas fa-ruler-combined"></i></div>
                 <div class="avantage__body">
                   <h4>Du sur-mesure, pas des templates</h4>
                   <p>Chaque solution naît de vos objectifs, votre secteur et vos clients — jamais d'un catalogue générique.</p>
                 </div>
               </div>
-
               <div class="avantage reveal reveal-delay-3">
-                <div class="avantage__icon avantage__icon--3">
-                  <i class="fas fa-comments"></i>
-                </div>
+                <div class="avantage__icon avantage__icon--3"><i class="fas fa-comments"></i></div>
                 <div class="avantage__body">
                   <h4>Proximité &amp; réactivité</h4>
                   <p>Disponibles, transparents, à l'écoute. Vous savez toujours où en est votre projet.</p>
                 </div>
               </div>
-
               <div class="avantage reveal reveal-delay-4">
-                <div class="avantage__icon avantage__icon--4">
-                  <i class="fas fa-chart-line"></i>
-                </div>
+                <div class="avantage__icon avantage__icon--4"><i class="fas fa-chart-line"></i></div>
                 <div class="avantage__body">
                   <h4>Orientés résultats mesurables</h4>
                   <p>Nos livrables génèrent du trafic, des leads et de la notoriété — pas juste de la beauté.</p>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -327,31 +512,19 @@
               <ol class="process__steps">
                 <li class="process__step">
                   <span class="process__num">01</span>
-                  <div>
-                    <strong>Découverte</strong>
-                    <p>On écoute votre projet, vos ambitions, votre cible.</p>
-                  </div>
+                  <div><strong>Découverte</strong><p>On écoute votre projet, vos ambitions, votre cible.</p></div>
                 </li>
                 <li class="process__step">
                   <span class="process__num">02</span>
-                  <div>
-                    <strong>Stratégie</strong>
-                    <p>On co-construit la feuille de route web + com'.</p>
-                  </div>
+                  <div><strong>Stratégie</strong><p>On co-construit la feuille de route web + com'.</p></div>
                 </li>
                 <li class="process__step">
                   <span class="process__num">03</span>
-                  <div>
-                    <strong>Création</strong>
-                    <p>Design, développement et contenus en synergie.</p>
-                  </div>
+                  <div><strong>Création</strong><p>Design, développement et contenus en synergie.</p></div>
                 </li>
                 <li class="process__step">
                   <span class="process__num">04</span>
-                  <div>
-                    <strong>Lancement &amp; suivi</strong>
-                    <p>On déploie, on mesure, on optimise en continu.</p>
-                  </div>
+                  <div><strong>Lancement &amp; suivi</strong><p>On déploie, on mesure, on optimise en continu.</p></div>
                 </li>
               </ol>
             </div>
@@ -361,9 +534,7 @@
       </div>
     </section>
 
-    <!-- ================================================
-         CONTACT
-    ================================================ -->
+    <!-- ── CONTACT ── -->
     <section id="contact" class="contact">
       <div class="container">
 
@@ -384,7 +555,6 @@
         <div class="contact__wrapper">
 
           <aside class="contact__info reveal">
-
             <ul class="contact__details">
               <li>
                 <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
@@ -411,14 +581,11 @@
               <p>« Le digital ne dort jamais. Votre image de marque non plus. »</p>
               <cite>— L'équipe Rewind</cite>
             </blockquote>
-
           </aside>
 
-          <!-- Formulaire -->
           <div class="contact__form-wrapper reveal reveal-delay-2">
             <form class="contact-form" id="contact-form" novalidate>
 
-              <!-- Champs cachés Web3Forms -->
               <input type="hidden" name="access_key"  value="2fafe665-8fca-4912-8bc5-a7daaf5acbce" />
               <input type="hidden" name="subject"     value="Nouvelle demande de contact — Rewind" />
               <input type="hidden" name="from_name"   value="Site Rewind" />
@@ -476,9 +643,7 @@
 
   </main>
 
-  <!-- ================================================
-       FOOTER
-  ================================================ -->
+  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="container footer__inner">
       <a href="#accueil" class="logo">
